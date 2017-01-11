@@ -43,7 +43,7 @@ header {
   width: 100%;
   height: 700px;
 }
-
+/*
 .navigation {
   display:flex;
   flex-direction:column;
@@ -58,8 +58,8 @@ header {
   text-align: center;
   justify-content: center;
   padding:0;
-}
-
+}*/
+/*
 .navigation_item a{
   text-decoration: none;
   font-weight: bold;
@@ -80,7 +80,7 @@ header {
 .navigation_item:hover a{
   color: #FF9800;
   border-color: #FF9800;
-}
+}*/
 
 .main {
   color:#fff;
@@ -99,6 +99,7 @@ header {
   font-weight: bold;
   /*text-shadow: 1px 1px #000;*/
   text-align: center;
+  margin:0;
 }
 
 .main-intro_text {
@@ -107,21 +108,22 @@ header {
   padding:1rem;
   margin-bottom:0;
   text-align: center;
-
 }
 
 #about {
-  margin:2rem;
+  margin:4rem 2rem;
 }
 
 strong {
   font-weight: bold;
   color: rgba(34,125,170,1);
 }
+
+
 .about-title {
-  font-size:30px;
+  font-size:26px;
   font-weight:bold;
-  margin:4rem 2rem;
+  margin:2rem 2rem 2rem 0;
   float:left;
   color: rgba(34,125,170,1);
 }
@@ -135,28 +137,30 @@ strong {
 
 
 #projects {
-  margin: 2rem;
+  margin:2rem;
 }
 
 .projects-title {
   font-size:26px;
   font-weight:bold;
-  margin:12rem 2rem;
+  vertical-align: middle;
   float:left;
   color: rgba(34,125,170,1);
+  margin:11rem 2rem 10rem 0;
 }
 
 .projects-intro {
-  display:block;
   font-size:18px;
-  width: 50%;
-  margin:0 auto;
+  font-weight:bold;
+  /*margin:0 auto;*/
+  text-align: center;
+  padding:5px;
 }
 
 .projects-each {
   display:flex;
   padding:1rem;
-  margin-left:10rem;
+  margin-left:5rem;
 }
 
 .projects-name {
@@ -165,7 +169,6 @@ strong {
   /*margin:0 auto;*/
   width:30%;
   margin:0;
-  padding:5px;
 
 
 }
@@ -177,7 +180,8 @@ strong {
 }
 
 .projects-name a:hover {
-  color: rgba(34, 95, 170,1)
+  color: rgba(34, 95, 170,1);
+  cursor:pointer;
 }
 
 .projects-text {
@@ -186,6 +190,51 @@ strong {
   font-size:16px;
   width: 60%;
   /*margin:0 auto;*/
+}
+
+#contact {
+  margin:2rem;
+}
+
+.fa {
+  color: rgba(34, 125, 170, 1);
+  text-decoration: none;
+  margin:3rem;
+}
+
+.fa:hover {
+  color: rgba(34, 95, 170,1);
+  cursor:pointer;
+  text-decoration: none;
+
+}
+
+.contact-title {
+  font-size:26px;
+  font-weight:bold;
+  margin:3rem 2rem;
+  float:left;
+  color: rgba(34,125,170,1);
+}
+
+.contact-text a {
+  color: rgba(34, 125, 170,1);
+  text-decoration: underline;
+  font-size:20px;
+  font-weight: bold;
+  padding:5px;
+}
+
+.contact-text a:hover {
+  color: rgba(34, 95, 170,1);
+  cursor:pointer;
+}
+
+.contact-text {
+  color: rgba(34, 125, 170, 1);
+  text-align: center;
+  margin: 1rem;
+  font-size: 18px;
 }
 
 
@@ -201,7 +250,6 @@ strong {
 .overwatch-picture {
   height:80%;
   background-image: url('Numbani_003.jpg');
-   /* Create the parallax scrolling effect */
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;

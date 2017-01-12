@@ -92,6 +92,7 @@ strong {
 .about-title {
   text-align: center;
   font-size:24px;
+  font-weight:bold;
   padding:0;
   margin:1rem 0 1rem 0;
   color: rgba(34,125,170,1);
@@ -117,14 +118,6 @@ strong {
   margin:1rem 0 1rem 0;
   font-weight:bold;
   color: rgba(34,125,170,1);
-}
-
-.projects-intro {
-  font-weight:bold;
-  font-size:14px;
-  margin:10px 0 10px 0;
-  text-align: center;
-  padding:5px;
 }
 
 .projects-each {
@@ -276,10 +269,6 @@ strong {
     margin:2rem;
   }
 
-  strong {
-    font-weight: bold;
-  }
-
   .about-title {
     margin:0;
     padding-bottom:20px;
@@ -291,16 +280,13 @@ strong {
   }
 
   #projects {
+    display:flex;
     margin:2rem;
   }
 
   .projects-title {
     margin:0;
     padding-bottom:20px;
-  }
-
-  .projects-intro {
-    padding:5px;
   }
 
   .projects-each {
@@ -311,6 +297,7 @@ strong {
     width:65%;
     margin:0 auto;
   }
+
   .projects-text {
     margin:0 auto;
     padding:0;
@@ -327,52 +314,61 @@ strong {
 
     #about {
       text-align: left;
-      margin:2rem;
+      margin:2rem 0 2rem 1rem;
       display:flex;
       flex-direction: row;
       align-items:center;
     }
 
-    strong {
-      font-weight: bold;
+    .aboutwrapper {
+      margin:0;
+      padding:0;
     }
 
     .about-title {
       text-align: left;
-      flex: 0 1 20%;
+      margin: 0 0 0 1rem;
+      flex: 0 1 30%;
     }
 
     .about-text {
       width: 65%;
-      margin:0 auto;
+      margin-left:1rem;
     }
 
     #projects {
       text-align: left;
-      margin:2rem;
+      margin:2rem 0 2rem 1rem;
       display:flex;
       flex-direction: row;
       align-items:center;
     }
 
+    .projectwrapper {
+      margin:0;
+      padding:0;
+    }
+
     .projects-title {
-      text-align: left;
-      flex: 0 1 20%;
+      text-align:left;
+      flex: 0 1 25%;
+      margin: 0 0 0 1rem;
     }
 
     .projects-each {
-      padding:1rem;
+      margin:0;
+      padding: 0;
     }
 
     .projects-name {
-      width:75%;
       margin:0 auto;
+      width:100%;
     }
 
     .projects-text {
       margin:0 auto;
       padding:0;
-      width: 75%;
+      width: 65%;
     }
 
 }

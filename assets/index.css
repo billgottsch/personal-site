@@ -60,6 +60,15 @@ header {
   margin:0;
 }
 
+.main-intro_titletwo{
+  padding:0 5px;
+  font-size:40px;
+  font-weight: bold;
+  /*text-shadow: 1px 1px #000;*/
+  text-align: center;
+  margin:0;
+}
+
 .main-intro_text {
   font-size:20px;
   /*text-shadow: 1px 1px #000;*/
@@ -69,7 +78,10 @@ header {
 }
 
 #about {
-  margin:4rem 2rem;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  margin:2rem .75rem;
 }
 
 strong {
@@ -77,60 +89,66 @@ strong {
   color: rgba(34,125,170,1);
 }
 
-
 .about-title {
-  font-size:26px;
-  font-weight:bold;
-  margin:2rem 2rem 2rem 0;
-  float:left;
+  text-align: center;
+  font-size:24px;
+  padding:0;
+  margin:1rem 0 1rem 0;
   color: rgba(34,125,170,1);
 }
 
 .about-text {
-  font-size:16px;
-  width: 50%;
+  width:85%;
   margin:0 auto;
 }
 
 
-
 #projects {
-  margin:2rem;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  margin:.75rem;
 }
 
 .projects-title {
-  font-size:26px;
+  text-align: center;
+  font-size:24px;
+  padding:0;
+  margin:1rem 0 1rem 0;
   font-weight:bold;
-  vertical-align: middle;
-  float:left;
   color: rgba(34,125,170,1);
-  margin:11rem 2rem 10rem 0;
 }
 
 .projects-intro {
-  font-size:18px;
   font-weight:bold;
-  /*margin:0 auto;*/
+  font-size:14px;
+  margin:10px 0 10px 0;
   text-align: center;
   padding:5px;
 }
 
 .projects-each {
   display:flex;
-  padding:1rem;
-  margin-left:5rem;
+  flex-direction: column;
+  margin:0;
+  padding:10px;
 }
 
 .projects-name {
-  font-size:18px;
+  text-align: center;
+  width:85%;
+  padding:5px;
+  font-size:20px;
   font-weight:bold;
-  /*margin:0 auto;*/
-  width:30%;
-  margin:0;
+  margin:0 auto;
 
 
 }
 .projects-name a{
+  font-size: 20px;
+  text-align: center;
+  margin:0;
+  padding:0;
   color: rgba(34,125,170,1);
   cursor:pointer;
   text-decoration: none;
@@ -143,21 +161,21 @@ strong {
 }
 
 .projects-text {
-  margin:0;
+  width:80%;
   padding:0;
-  font-size:16px;
-  width: 60%;
-  /*margin:0 auto;*/
+  margin:0 auto;
 }
 
+
 #contact {
-  margin:2rem;
+  /*margin:2rem;*/
 }
 
 .fa {
   color: rgba(34, 125, 170, 1);
   text-decoration: none;
-  margin:3rem;
+  padding:1rem;
+  margin-top: 1rem;
 }
 
 .fa:hover {
@@ -178,7 +196,7 @@ strong {
 .contact-text a {
   color: rgba(34, 125, 170,1);
   text-decoration: underline;
-  font-size:20px;
+  font-size:18px;
   font-weight: bold;
   padding:5px;
 }
@@ -223,131 +241,138 @@ strong {
   background-size:cover;
 }
 
+/* --------Media Queries-------- */
 
-/*@media (min-width: 360px) {
-  .main-intro_title {
-    font-size:34px;
-    padding:.5rem;
-  }
+/* --------Media Queries-------- */
 
-  .main-intro_text {
-    font-size:15px;
-    padding:.5rem;
-  }
-
-  #about {
-  text-align: center;
-  display:flex;
-  flex-direction: column;
-  margin:1.5rem;
-
-  }
-
-  .about-title {
-    text-align: center;
-    font-size:24px;
-    padding:0;
-    margin:1rem 0 1rem 0;
-  }
-
-  .about-text {
-    width:100%;
-    font-size:14px;
-    margin:0;
-  }
-
-  #projects {
-    text-align: center;
-    display:flex;
-    flex-direction: column;
-    margin:0;
-    padding:5px;
-  }
-
-  .projects-title {
-    text-align: center;
-    font-size:24px;
-    padding:0;
-    margin:1rem 0 1rem 0;
-  }
-
-  .projects-intro {
-    font-size:14px;
-    margin:0 0 10px 0;
-    padding:0;
-  }
-
-  .projects-each {
-    display:flex;
-    flex-direction: column;
-    margin:0;
-    padding:5px;
-  }
-
-  .projects-name {
-    font-size:18px;
-    text-align: center;
-    width:100%;
-    margin:0;
-    padding:0;
-  }
-  .projects-name a{
-    font-size: 16px;
-    text-align: center;
-    margin:0;
-    padding:0;
-
-  }
-
-  .projects-name a:hover {
-  }
-
-  .projects-text {
-    width:100%;
-    font-size:14px;
-    margin:10px;
-    padding:0;
-  }
-
-  #contact {
-  }
-
-  .fa.fa-2x {
-    font-size:1em;
-    padding:5px;
-  }
-
-  .contact-title {
-    font-size:24px;
-    margin:0;
-  }
-
-  .contact-text a {
-    color: rgba(34, 125, 170,1);
-    font-size:18px;
-    margin:.5srem;
-  }
-
-  .contact-text a:hover {
-    color: rgba(34, 95, 170,1);
-    cursor:pointer;
-  }
-
-  .contact-text {
-    color: rgba(34, 125, 170, 1);
-    text-align: center;
-    margin: 1rem;
-    font-size: 18px;
-  }
+@media (min-width: 600px) {
 
 
-}*/
-
-@media (min-width: 700px) {
-  header {
-    height:700px;
+  .main {
+    color:#fff;
+    display:table-cell;
+    font-weight: bold;
+    vertical-align: middle;
   }
 
   .main-intro_title{
-  font-size:60px;
+    font-size:60px;
+  }
+
+  .main-intro_titletwo{
+    font-size:48px;
+  }
+
+  .main-intro_text {
+    font-size:22px;
+    /*text-shadow: 1px 1px #000;*/
+    padding:1rem;
+    margin:0;
+    text-align: center;
+  }
+
+  #about {
+    display:flex;
+    margin:2rem;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  .about-title {
+    margin:0;
+    padding-bottom:20px;
+  }
+
+  .about-text {
+    width: 65%;
+    margin:0 auto;
+  }
+
+  #projects {
+    margin:2rem;
+  }
+
+  .projects-title {
+    margin:0;
+    padding-bottom:20px;
+  }
+
+  .projects-intro {
+    padding:5px;
+  }
+
+  .projects-each {
+    padding:1rem;
+  }
+
+  .projects-name {
+    width:65%;
+    margin:0 auto;
+  }
+  .projects-text {
+    margin:0 auto;
+    padding:0;
+    width: 65%;
+  }
+
+  .fa {
+    margin:1rem;
+  }
+
+}
+
+@media (min-width: 900px) {
+
+    #about {
+      text-align: left;
+      margin:2rem;
+      display:flex;
+      flex-direction: row;
+      align-items:center;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    .about-title {
+      text-align: left;
+      flex: 0 1 20%;
+    }
+
+    .about-text {
+      width: 65%;
+      margin:0 auto;
+    }
+
+    #projects {
+      text-align: left;
+      margin:2rem;
+      display:flex;
+      flex-direction: row;
+      align-items:center;
+    }
+
+    .projects-title {
+      text-align: left;
+      flex: 0 1 20%;
+    }
+
+    .projects-each {
+      padding:1rem;
+    }
+
+    .projects-name {
+      width:75%;
+      margin:0 auto;
+    }
+
+    .projects-text {
+      margin:0 auto;
+      padding:0;
+      width: 75%;
+    }
+
 }

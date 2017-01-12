@@ -210,34 +210,26 @@ strong {
 .golf-picture {
   background-image: url('rydercup.jpg');
   height: 80%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover;
+  background-attachment: scroll;
 }
 
 .overwatch-picture {
   height:80%;
   background-image: url('Optimized-Numbani_003.jpg');
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+  background-attachment: scroll;
+
 }
 
 .tech-picture {
   background-image: url('laptopcoffee.jpg');
   height:80%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover;
+  background-attachment: scroll;
+
 }
 
 /* --------Media Queries-------- */
 
 /* --------Media Queries-------- */
-
 @media (min-width: 600px) {
 
 
@@ -309,6 +301,34 @@ strong {
   }
 
 }
+
+.golf-picture {
+  background-image: url('rydercup.jpg');
+  height: 80%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.overwatch-picture {
+  height:80%;
+  background-image: url('Optimized-Numbani_003.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tech-picture {
+  background-image: url('laptopcoffee.jpg');
+  height:80%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
 
 @media (min-width: 900px) {
 
